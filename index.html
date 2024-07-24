@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    title {
+      display: inline-block;
+    }
+    .zero-pl {
+      padding-left: 0 !important;
+    }
+    .zero-pr {
+      padding-right: 0 !important;
+    }
+
+    .background {
+      height: 100vh;
+      background: linear-gradient(to bottom, #153d77 20%, #e3e1ca 20%);
+    }
+
+    .form-section,
+    .list-section {
+      background: #ffff;
+    }
+
+    .form-section > .form-content > .group-form {
+      background: #e9ecef;
+    }
+    .form-container {
+      padding: 20px 35px 20px 35px;
+    }
+    .form-control.custom-input,
+    .form-select.custom-input {
+      height: 30px; /* Reduce the height of input fields */
+      font-size: 0.875rem; /* Optional: Adjust the font size if needed */
+      padding: 0.25rem 0.5rem; /* Optional: Adjust the padding if needed */
+    }
+    .form-container > .row > div {
+      margin-bottom: 20px; /* Increase spacing between forms */
+    }
+
+    .list-setting > .list-setting-option {
+      list-style-type: none;
+    }
+    .list-setting > .list-setting-option > li {
+      display: inline;
+      padding-left: 10px;
+    }
+    .list-setting-option > li > select,
+    .list-setting-option > li > input {
+      display: inline-block;
+      width: auto;
+    }
+    .list {
+      height: 440px;
+    }
+    .list > table {
+      height: 100%;
+    }
+    .table-blue-head thead {
+      background: #007bff !important;
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="background">
+      <div class="wrapper p-4">
+        <div class="form-section mb-3">
+          <div class="form-content p-4">
+            <div class="title d-flex justify-content-between">
+              <h5>XXXX</h5>
+              <i class="bi bi-chevron-double-up"></i>
+            </div>
+            <div class="group-form">
+              <div class="form-container">
+                <div class="row">
+                  <!-- form1 -->
+                  <div class="col-3 m-3">
+                    <form class="row row-cols-3">
+                      <div class="col-2 p-0 text-left">
+                        <title class="p-2">XXXX</title>
+                      </div>
+                      <div class="col-4 p-0">
+                        <input type="date" class="form-control custom-input" />
+                      </div>
+                      <div class="col-1 p-0 text-center">
+                        <title class="p-2">-</title>
+                      </div>
+                      <div class="col-4 p-0">
+                        <input type="date" class="form-control custom-input" />
+                      </div>
+
+                      <div class="col-2 p-0 text-left">
+                        <title class="p-2">XX</title>
+                      </div>
+                      <div class="col-3 p-0">
+                        <select
+                          class="form-select zero-pr custom-input"
+                          id="autoSizingSelect"
+                        >
+                          <option selected></option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="col-6 zero-pl">
+                        <input
+                          type="text"
+                          class="form-control zero-pl custom-input"
+                        />
+                      </div>
+
+                      <div class="col-2 p-0 text-left">
+                        <title class="p-2">XX</title>
+                      </div>
+                      <div class="col-3 p-0">
+                        <select
+                          class="form-select zero-pr custom-input"
+                          id="autoSizingSelect"
+                        >
+                          <option selected></option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="col-6 zero-pl">
+                        <input
+                          type="text"
+                          class="form-control zero-pl custom-input"
+                        />
+                      </div>
+
+                      <div class="col-2 p-0 text-left">
+                        <title class="p-2">XXX</title>
+                      </div>
+                      <div class="col-4 p-0">
+                        <select
+                          class="form-select zero-pr custom-input"
+                          id="autoSizingSelect"
+                        >
+                          <option selected></option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="col-6 zero-pl">
+                        <input type="text" class="form-control custom-input" />
+                      </div>
+                    </form>
+                  </div>
+                  <!-- form1 -->
+                  <!-- form2 -->
+                  <div class="col-3 m-3">
+                    <form class="row row-cols-3">
+                      <div class="col-2 p-0 text-left">
+                        <title class="p-2">XXXX</title>
+                      </div>
+                      <div class="col-2 p-0">
+                        <select
+                          class="form-select zero-pr custom-input"
+                          id="autoSizingSelect"
+                        >
+                          <option selected></option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="col-2 p-0">
+                        <input type="text" class="form-control custom-input" />
+                      </div>
+                      <div class="col-1 p-0 text-center">
+                        <title class="p-1">XXXX</title>
+                      </div>
+                      <div class="col-2 zero-pr">
+                        <select
+                          class="form-select zero-pr custom-input"
+                          id="autoSizingSelect"
+                          style="margin-left: 3px"
+                        >
+                          <option selected></option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="col-3 p-0">
+                        <input
+                          type="text"
+                          class="form-control custom-input"
+                          style="margin-left: 2px"
+                        />
+                      </div>
+
+                      <div class="col-2 p-0 text-left">
+                        <title class="p-2">XX</title>
+                      </div>
+                      <div class="col-3 p-0">
+                        <select
+                          class="form-select zero-pr custom-input"
+                          id="autoSizingSelect"
+                        >
+                          <option selected></option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="col-7 zero-pl">
+                        <input
+                          type="text"
+                          class="form-control zero-pl custom-input"
+                        />
+                      </div>
+
+                      <div class="col-2 p-0 text-left">
+                        <title class="p-2">XX</title>
+                      </div>
+                      <div class="col-3 p-0">
+                        <select
+                          class="form-select zero-pr custom-input"
+                          id="autoSizingSelect"
+                        >
+                          <option selected></option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="col-7 zero-pl">
+                        <input
+                          type="text"
+                          class="form-control zero-pl custom-input"
+                        />
+                      </div>
+
+                      <div class="col-2 p-0 text-left">
+                        <title class="p-2">XXXX</title>
+                      </div>
+                      <div class="col-4 zero-pl">
+                        <input type="text" class="form-control custom-input" />
+                      </div>
+                      <div class="col-2 p-0 text-left">
+                        <title class="p-1">XXXXX</title>
+                      </div>
+                      <div class="col-4 zero-pl">
+                        <input type="text" class="form-control custom-input" />
+                      </div>
+                    </form>
+                  </div>
+                  <!-- form2 -->
+
+                  <!-- form3 -->
+                  <div class="col-3 m-3">
+                    <form class="row row-cols-3">
+                      <div class="col-3 p-0 text-left">
+                        <title class="p-2">XXXXXX</title>
+                      </div>
+                      <div class="col-9 p-0">
+                        <input type="text" class="form-control custom-input" />
+                      </div>
+
+                      <div class="col-3 p-0 text-left">
+                        <title class="p-2">XXXXX</title>
+                      </div>
+                      <div class="col-9 p-0">
+                        <input type="text" class="form-control custom-input" />
+                      </div>
+
+                      <div class="col-3 p-0 text-left">
+                        <title class="p-2">XXXXXX</title>
+                      </div>
+                      <div class="col-3 p-0">
+                        <select
+                          class="form-select zero-pr custom-input"
+                          id="autoSizingSelect"
+                        >
+                          <option selected></option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="col-6 zero-pl">
+                        <input
+                          type="text"
+                          class="form-control zero-pl custom-input"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                  <!-- form3 -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-section">
+          <div class="list-content p-4">
+            <div class="list-setting">
+              <ul class="list-setting-option">
+                <li>XX</li>
+                <li>XXXX</li>
+                <li>
+                  <input type="text" class="form-control form-control-sm" />
+                </li>
+                <li>XXXXXXX</li>
+                <li>
+                  <select class="form-select form-select-sm">
+                    <option value="1">10X</option>
+                  </select>
+                </li>
+              </ul>
+            </div>
+            <div class="list">
+              <table class="table table-primary">
+                <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>XXXX</th>
+                    <th>XXXXXXX</th>
+                    <th>XXXXXX</th>
+                    <th>XXXX</th>
+                    <th>XXXX</th>
+                    <th>XXXX</th>
+                    <th>XXXX</th>
+                    <th>XXXX</th>
+                    <th>XXXX</th>
+                    <th>XXXX</th>
+                    <th>XXXXX</th>
+                    <th>XXXX</th>
+                    <th>XXXX</th>
+                    <th>XXXXXX</th>
+                    <th>XX</th>
+                    <th>XXXXXX</th>
+                    <th>XXXXX</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>XXXX</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
